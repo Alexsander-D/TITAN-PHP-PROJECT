@@ -5,7 +5,8 @@ $(document).ready(function () {
     //INICIA O DATATABLE
     function initialiseDataTable() {
         $("#tabela-produto").DataTable({
-            bFilter: false,
+            //HABILITADO FILTRO DA TABELA
+            bFilter: true,
             ajax: {
                 url: "/TITAN/includes/controller/produtoManagement/produtoScripts.php?acao=pesquisar-todos-produto",
                 type: 'GET',
