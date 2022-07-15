@@ -4,8 +4,6 @@
 Projeto organizado em MVC
 
 ##Configuração de pastas
-
-//Arquivo de configuração do banco de dados
 <!--ts-->
 
  * index.php
