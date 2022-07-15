@@ -48,11 +48,39 @@ class produtoController
 
     public function createProduto()
     {
+        //TRATANDO VALOR PARA INSERIR NO BANCO
+        function CALCULA_DESCONTO($StringToNumber, $cor)
+        {
+            //FORMATA O VALOR RECEBIDO DA MASCARA JS COM VIRGULA PARA SALVAR NO BANCO
+            $PRECO = str_replace('.', '', $StringToNumber);
+            $PRECO = str_replace(',', '.', $PRECO);
+
+            if ($cor === "Azul" || $cor === "Vermelho") {
+                if ($cor === "Vermelho") {
+
+                    if ($PRECO > 50) {
+                        $PRECO = $PRECO - ($PRECO / 100) * 5;
+                    } else {
+                        $PRECO = $PRECO - ($PRECO / 100) * 20;
+                    }
+                } else {
+                    $PRECO = $PRECO - ($PRECO / 100) * 20;
+                }
+            } elseif ($cor === "Amarelo") {
+                $PRECO = $PRECO - ($PRECO / 100) * 10;
+            }
+            return $PRECO;
+        }
+
         $produtoModel = new produtoModel;
+
+        $COR = $_GET['COR'];
+        $PRECO_ATUALIZADO = CALCULA_DESCONTO($_GET['PRECO'], $COR);
+
         $dados = array(
-            'COR' => $_GET['COR'],
-            'NOME' => $_GET['NOME'],
-            'PRECO' => $_GET['PRECO'],
+            'COR' => $COR,
+            'NOME' => $_GET['NOME'],            
+            'PRECO' => $PRECO_ATUALIZADO,
         );
         $produto = $produtoModel->createProduto($dados);
 
