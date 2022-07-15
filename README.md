@@ -1,41 +1,45 @@
 # TITAN-PHP-PROJECT
 
-#PHP-MVC
+##PHP-MVC
 Projeto organizado em MVC
 
-#Configuração de pastas
+##Configuração de pastas
 
 //Arquivo de configuração do banco de dados
-=index.php
-=TITAN
-==includes
-===config
+<!--ts-->
+
+ * index.php
+ * [TITAN]
+  * [includes]
+   * [config]
 //Arquivo de conexao ao banco de dados
-====conexao.php
+    * conexao.php
 //Arquivo de conexao ao rotas
-====rotas.php
-===controller
-====produtoManagement
+    * rotas.php
+   * [controller]
+    * [produtoManagement]
 //Controller dos produtos
-====produtoController.php
+     * produtoController.php
 //Scripts produtos
-=====produtoScripts.js
-===model
-====produtoManagement
+     * produtoScripts.js
+   * [model]
+    * [produtoManagement]
 //Arquivo php dos produtos
-=====produtoModel.php
-==js
+     * produtoModel.php
+  * [js]
 //Cadastra os produtos e o preço
-===cadastrarProduto.js
+   * cadastrarProduto.js
 //Edita os produtos
-===editaProduto.js
+   * editaProduto.js
 //Tabela produtos e configurações da tabela da index
-===produtos.js
+   * produtos.js
 //Front end das paginas
-==view
-===cadastrarProduto.php
-===editaProdutos.php
-===index.php
+  * [view]
+   * cadastrarProduto.php
+   * editaProdutos.php
+   * index.php
 //Arquivo de configuração do banco de dados
-==bd.sql
-=images
+  * bd.sql
+ * [images]
+  * favicon.ico
+<!--te-->
