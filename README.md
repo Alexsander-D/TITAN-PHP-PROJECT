@@ -17,28 +17,28 @@ Projeto organizado em MVC
     * rotas.php
    * [controller]
     * [produtoManagement]
-//Controller dos produtos
      * produtoController.php
-//Scripts produtos
+     //Controller dos produtos
      * produtoScripts.js
+     //Scripts produtos
    * [model]
     * [produtoManagement]
-//Arquivo php dos produtos
      * produtoModel.php
+     //Arquivo php dos produtos
   * [js]
-//Cadastra os produtos e o preço
    * cadastrarProduto.js
-//Edita os produtos
+   //Cadastra os produtos e o preço
    * editaProduto.js
-//Tabela produtos e configurações da tabela da index
+   //Edita os produtos
    * produtos.js
-//Front end das paginas
+   //Tabela produtos e configurações da tabela da index
   * [view]
+  //Front end das paginas
    * cadastrarProduto.php
    * editaProdutos.php
    * index.php
-//Arquivo de configuração do banco de dados
   * bd.sql
+  //Arquivo de configuração do banco de dados
  * [images]
   * favicon.ico
 <!--te-->
