@@ -12,9 +12,8 @@ Projeto organizado em MVC
  * [TITAN]
   * [includes]
    * [config]
-//Arquivo de conexao ao banco de dados
+//Arquivos de conexao ao banco de dados e rotas
     * conexao.php
-//Arquivo de conexao ao rotas
     * rotas.php
    * [controller]
     * [produtoManagement]
