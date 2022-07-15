@@ -1,6 +1,6 @@
 # TITAN-PHP-PROJECT
 
-##PHP-MVC
+##PHP
 Projeto organizado em MVC
 
 ##Configuração de pastas
