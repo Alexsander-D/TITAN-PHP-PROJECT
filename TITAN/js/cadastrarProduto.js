@@ -17,24 +17,6 @@ $(document).ready(function () {
 
         let COR = $("#cor2").val();
         let PRECO = $("#preco").val();
-        PRECO = PRECO.replace(",", ".");
-
-        if (COR === "Azul" || COR === "Vermelho") {
-            if (COR === "Vermelho") {
-
-                if (PRECO > 50) {
-                    PRECO = PRECO - (PRECO / 100) * 5;
-                } else {
-                    PRECO = PRECO - (PRECO / 100) * 20;
-                }
-
-            } else {
-                PRECO = PRECO - (PRECO / 100) * 20;
-            }
-
-        } else if (COR === "Amarelo") {
-            PRECO = PRECO - (PRECO / 100) * 10;
-        }
 
         let formData = {
             NOME: $("#produto").val(),

@@ -72,7 +72,7 @@ class produtoModel
 
         $produto = $this->pdo->prepare("INSERT INTO $this->preco SET IDPRODUTO=:IDPRODUTO, PRECO=:PRECO");
         $produto->bindValue(":IDPRODUTO", $IDPRODUTO);
-        $produto->bindValue(":PRECO", str_replace(",", ".", $dados['PRECO']));
+        $produto->bindValue(":PRECO", $dados['PRECO']);
         $produto->execute();
 
         return true;
